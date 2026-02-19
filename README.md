@@ -55,36 +55,15 @@ To clone this repository, open your terminal and run:
 git clone https://github.com/HaackDEV/spring-boot-ecommerce-system.git
 ```
 
-<h3>Environment Variables</h3>
-
-Use the `application.properties.example` as reference to create your configuration file `application.properties` with your H2 database configuration:
-
-
-
-```properties
-# DATASOURCE
-spring.datasource.driverClassName=org.h2.Driver
-spring.datasource.url=jdbc:h2:mem:testdb
-spring.datasource.username={YOUR_USERNAME}
-spring.datasource.password={YOUR_PASSWORD}
-
-# H2 CLIENT
-spring.h2.console.enabled=true
-spring.h2.console.path=/h2-console
-
-# JPA, SQL
-spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
-spring.jpa.defer-datasource-initialization=true
-spring.jpa.show-sql=true
-spring.jpa.properties.hibernate.format_sql=true
-```
-
 <h3>Starting</h3>
 
-How to start your project
+Run the following commands on your terminal:
 
 ```bash
 mvn clean install
+``````
+
+```bash
 mvn spring-boot:run
 ``````
 
